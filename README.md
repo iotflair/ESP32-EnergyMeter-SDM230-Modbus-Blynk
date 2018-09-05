@@ -18,7 +18,11 @@ For example:
   #define RX_PIN                             17                           //default digital pin for RX
 #endif  
 
+For more detailed information about Modbus driver and library:
+https://github.com/reaper7/SDM_Energy_Meter
+
 
 It needs to be installed Blynk library in Arduino program.
 Image of the scheme and connections is shown at /IMG/emeter.jpg
+
 

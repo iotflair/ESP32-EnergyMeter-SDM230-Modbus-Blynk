@@ -18,7 +18,7 @@ For example:
   #define RX_PIN                             17                           //default digital pin for RX
 #endif  
 
-For more detailed information about Modbus driver and library:
+For more detailed information about Energy Meters Modbus driver and library:
 https://github.com/reaper7/SDM_Energy_Meter
 
 

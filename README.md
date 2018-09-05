@@ -1,4 +1,4 @@
-# ESP32-EnergyMeter-SDM230-Blynk
+# ESP32-EnergyMeter-SDM230-Modbus-Blynk
 
 ## About
 

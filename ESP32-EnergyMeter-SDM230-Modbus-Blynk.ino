@@ -11,7 +11,7 @@
 HardwareSerial SerialSDM(1);                                                   //Set Hardware Serial(pins 16 & 17)
 SDM sdm(SerialSDM, 2400);                                                      //config SDM
 
-float voltage,current,power,frequency;
+float voltage,current,power,frequency,energy;
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
@@ -33,6 +33,7 @@ void myTimerEvent()
   Blynk.virtualWrite(V6, current);
   Blynk.virtualWrite(V7, power);
   Blynk.virtualWrite(V8, frequency);
+  Blynk.virtualWrite(V9, energy);
 }
 
 
@@ -92,6 +93,13 @@ void sdm_get(){
   frequency = sdm.readVal(SDM230_FREQUENCY);
   Serial.print(frequency, 2);                              //display frequency
   Serial.println("Hz");   
+  
+  delay(50);
+
+  Serial.print("Total Active Energy: ");
+  frequency = sdm.readVal(SDM230_TOTAL_ACTIVE_ENERGY  );
+  Serial.print(energy, 2);                              //display frequency
+  Serial.println("kWh");   
 
 }
 //***************************************************************//

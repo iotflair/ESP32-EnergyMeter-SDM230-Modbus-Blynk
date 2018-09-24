@@ -97,8 +97,8 @@ void sdm_get(){
   delay(50);
 
   Serial.print("Total Active Energy: ");
-  frequency = sdm.readVal(SDM230_TOTAL_ACTIVE_ENERGY  );
-  Serial.print(energy, 2);                              //display frequency
+  energy = sdm.readVal(SDM230_TOTAL_ACTIVE_ENERGY  );
+  Serial.print(energy, 2);                                  //display total active energy
   Serial.println("kWh");   
 
 }
